@@ -1,0 +1,57 @@
+.header {
+    width: 100%;
+    background-color: black;
+
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 85px;
+    height: 78px;
+    
+}
+
+.nav {
+    width: 88%;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.nav > a {
+    margin: 0 20px;
+    font-family: 'Montserrat';
+    font-weight: bold;
+
+    text-decoration: none;
+    color: white;
+
+    transition: .2s all;
+}
+
+.nav > a::after {
+    content: "";
+    width: 0;
+    background-color: aliceblue;
+    height: 2px;
+
+    display: block;
+    opacity: 0;
+
+    transition: .2s all;
+}
+
+a:hover {
+    color: rgb(131, 131, 243);
+}
+
+.nav > a:hover:after {
+    width: 100%;
+    opacity: 1;
+    background-color: rgb(131, 131, 243);
+}
+
+.active {
+    color: rgb(131, 131, 243);
+}
