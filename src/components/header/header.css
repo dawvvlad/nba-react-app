@@ -12,17 +12,23 @@
     
 }
 
+.nav-panel {
+    width: 100%;
+    
+}
+
 .nav {
-    width: 88%;
+    width: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center
+    justify-content: start;
+    align-items: center;
+    z-index: 10;
 }
 
 .nav > a {
     margin: 0 20px;
     font-family: 'Montserrat';
-    font-weight: bold;
+    font-weight: 500;
 
     text-decoration: none;
     color: white;

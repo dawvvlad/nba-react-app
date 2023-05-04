@@ -1,0 +1,110 @@
+.card-inner {
+    border: 1px solid rgb(49, 49, 49);
+    border-radius: 10px;
+    padding: 20px 0;
+
+    width: 90%;
+
+    color: white;
+}
+
+.match {
+    text-align: center;
+    font-family: 'Montserrat';
+    font-size: 24px;
+    animation: start-animation 1s;
+}
+
+.date > p {
+    color: rgb(255, 136, 57);
+}
+
+.player-card {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 20px;
+    padding: 1% 1% 0 10%;
+    animation: start-animation 1s;
+    text-align: center;
+}
+
+.player-card:nth-child(odd) {
+    background-color: rgba(94, 94, 94, .6);
+}
+
+.player-card > li {
+    list-style: none;
+    font-family: 'Montserrat';
+    font-size: 18px;
+    flex:  1 1 0;
+}
+
+.player-img {
+    width: 15%;
+
+}
+
+.player-card > p {
+    flex:  1 1 0;
+}
+
+.event-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.home-away {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    width: 85%;
+    text-transform: uppercase;
+}
+
+.home > h2, .away > h2 {
+    border-bottom: 1px solid white;
+}
+
+.winner {
+    color: rgb(255, 136, 57);
+}
+
+.scores {
+    font-size: 100%;
+}
+
+.btns {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.back-btn-team {
+    background-color: rgb(59, 110, 219);
+    color: white;
+    
+    cursor: pointer;
+    text-transform: uppercase;
+
+    font-family: 'Montserrat';
+
+    border: none;
+    border-radius: 20px;
+    padding: 15px 20px;
+
+
+    transition: .2s linear;
+}
+
+.back-btn-team:hover {
+    background-color: rgb(9, 58, 165);
+}
+
+.a {
+    margin: 3% 0;
+}

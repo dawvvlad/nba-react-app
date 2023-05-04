@@ -9,7 +9,12 @@ const reducer = (state, { type, payload }) => {
             return {
                 ...state,
                 teams: payload
-            }
+            };
+        case "SET_GAME_RESULTS":
+            return {
+                ...state,
+                gameResults: payload
+            }    
 
         default: return state
     }

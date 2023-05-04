@@ -1,0 +1,48 @@
+#west, #east {
+    width: 80%;
+}
+
+.team {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border-radius: 20px;
+
+    width: 100%;
+}
+
+.team:nth-child(odd) {
+    background-color: rgba(94, 94, 94, .6);
+}
+
+.team-icon {
+    width: 50px;
+    height: 50px;
+
+    padding-left: 20px;
+}
+
+.team-link {
+
+    text-decoration: none;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.team-link > p {
+    font-family: 'Montserrat';
+    font-size: 20px;
+    padding-left: 20px;
+    margin: 0;
+
+    font-weight: 100;
+
+    transition: .2s linear;
+    color: white;
+}
+
+.team-link > p:hover {
+    color: rgb(131, 131, 243);
+}

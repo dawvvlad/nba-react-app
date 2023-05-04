@@ -1,3 +1,49 @@
 .hidden {
     display: none;
 }
+
+.teams-wrapper {
+    width: 90%;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgb(49, 49, 49);
+    border-radius: 10px;
+
+    margin-top: 15px;
+
+    animation: start-animation 1s;
+}
+
+.teams-wrapper > h1 {
+    width: 80%;
+
+    cursor: pointer;
+
+    background-color: rgb(84, 84, 245);
+    text-align: center;
+    color: white;
+    padding: 15px 0;
+
+    font-family: 'Montserrat';
+
+    font-weight: 500;
+
+    border-radius: 20px;
+
+    transition: .2s linear;
+}
+
+.teams-wrapper > h1:hover {
+    background-color: rgb(46, 46, 221);
+}
+
+.teams-wrapper > p {
+    color: rgb(83, 83, 83);
+    text-transform: uppercase;
+
+    font-family: 'Montserrat';
+}

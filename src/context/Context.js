@@ -5,7 +5,8 @@ const MainContext = createContext()
 
 const initialState = {
     isLoading: false,
-    teams: []
+    teams: [],
+    gameResults: []
 }
 
 const Context = ({ children }) => {
@@ -17,6 +18,10 @@ const Context = ({ children }) => {
 
     state.setTeams = (data) => {
         dispatch({ type: "SET_TEAMS", payload: data })
+    }
+
+    state.setGameResults = (value) => {
+        dispatch({ type: "SET_GAME_RESULTS", payload: value })
     }
 
     return (

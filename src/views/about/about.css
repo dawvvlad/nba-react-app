@@ -1,0 +1,47 @@
+.about {
+    width: 100%;
+    min-height: 100vh;
+    background: url('../../../public/main-back.jpg') center no-repeat;
+    background-size: cover;
+
+    padding-top: 70px;
+    
+}
+
+.about-menu {
+    padding: 20px;
+    width: 85%;
+    margin: 0 auto;
+    border-radius: 10px;
+
+    height: 60vh;
+    background-color: rgba(17, 15, 104, 0.7);
+
+    box-shadow: 0 0 5px rgb(148, 148, 148);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    text-align: center;
+    animation: start-animation 1s ;;
+}
+
+.about-menu__title {
+    color: white;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    text-transform: uppercase;
+    animation: start-animation 2s ;
+}
+
+.about-menu__text {
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Montserrat';
+}
+
+.github-link {
+    color: white;
+    transition: .2s all;
+}

@@ -4,14 +4,16 @@ import { NavLink } from "react-router-dom"
 export function Header() {
     return (
         <header className="header">
-            <img className="logo" src="./logo.jpg" alt="nba" />
+            <img className="logo" src="../../logo.jpg" alt="nba" />
 
-            <nav className="nav">
-                <NavLink to={`/`}>Home</NavLink>
-                <NavLink to={`/teams`}>Teams</NavLink>
-                <NavLink to={`/about`}>About</NavLink>
+            <div className="nav-panel">
+                <nav className="nav">
+                    <NavLink to={`/`}>Home</NavLink>
+                    <NavLink to={`/teams`}>Teams</NavLink>
+                    <NavLink to={`/about`}>About</NavLink>
 
-            </nav>
+                </nav>
+            </div>
         </header>
     )
 }
