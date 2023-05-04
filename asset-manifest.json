@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/nba-react-app/static/css/main.f9bf3082.css",
-    "main.js": "/nba-react-app/static/js/main.59d80d69.js",
+    "main.js": "/nba-react-app/static/js/main.0885d61b.js",
     "static/media/main-back.jpg": "/nba-react-app/static/media/main-back.eef4d874b8a0c5c49d9f.jpg",
     "index.html": "/nba-react-app/index.html",
     "main.f9bf3082.css.map": "/nba-react-app/static/css/main.f9bf3082.css.map",
-    "main.59d80d69.js.map": "/nba-react-app/static/js/main.59d80d69.js.map"
+    "main.0885d61b.js.map": "/nba-react-app/static/js/main.0885d61b.js.map"
   },
   "entrypoints": [
     "static/css/main.f9bf3082.css",
-    "static/js/main.59d80d69.js"
+    "static/js/main.0885d61b.js"
   ]
 }
