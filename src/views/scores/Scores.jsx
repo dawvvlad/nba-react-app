@@ -27,20 +27,30 @@ export const Scores = () => {
         <>
         { !nextEvent[0] ? <Preloader /> :
             <div className="scores-container">
-                <button className="back-btn-team" key="back" onClick={() => navigate(-1)}>back</button>
+                <button id="back" className="back-btn-team" key="back" onClick={() => navigate(-1)}>back</button>
                 <div className="scores-wrapper">
-                    { nextEvent[0].leaders ? 
+                    { nextEvent[0].leaders || nextEvent[1].leaders ? 
                     <div className="best-players">
                         <p>best score</p>
                         <div className="team-score-button" onClick={toggle1}>Best Players</div>
                         <div id="west" className="player-menu">
-                            { nextEvent[0].leaders.map(leader => {
+                            { nextEvent[0].leaders ? nextEvent[0].leaders.map(leader => {
                                 return <div className="player-menu__item">
                                     <p style={{ color: "rgb(255, 136, 57)" }}>{leader.displayName}</p>
                                     <span style={{ color:"white" }}>-</span>
                                     <p>{leader.leaders ? leader.leaders[0].athlete.displayName + ` (${Math.round(leader.leaders[0].value)})` : `No player`}</p>
                                 </div>
-                            }) }
+                            }) :
+                            
+                            nextEvent[1].leaders.map(leader => {
+                                return <div className="player-menu__item">
+                                    <p style={{ color: "rgb(255, 136, 57)" }}>{leader.displayName}</p>
+                                    <span style={{ color:"white" }}>-</span>
+                                    <p>{leader.leaders ? leader.leaders[0].athlete.displayName + ` (${Math.round(leader.leaders[0].value)})` : `No player`}</p>
+                                </div>
+                            })
+
+                            }
                         </div>
                     </div>
                 

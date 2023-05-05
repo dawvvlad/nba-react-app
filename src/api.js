@@ -1,6 +1,6 @@
 export const getTeamsData = async () => {
     try {
-        const response = await fetch(`http://site.api.espn.com/apis/site/v2/sports/basketball/nba/teams`, {
+        const response = await fetch(`https://site.api.espn.com/apis/site/v2/sports/basketball/nba/teams`, {
             headers: {
                 "Content-Type": "Application/x-www-form-urlencoded",
                 Accept: "application/json"
@@ -16,7 +16,7 @@ export const getTeamsData = async () => {
 
 export async function getSpecificTeam (teamId) {
     try {
-        const response = await fetch(`http://site.api.espn.com/apis/site/v2/sports/basketball/nba/teams/${teamId}`, {
+        const response = await fetch(`https://site.api.espn.com/apis/site/v2/sports/basketball/nba/teams/${teamId}`, {
             headers: {
                 "Content-Type": "Application/x-www-form-urlencoded",
                 Accept: "application/json"
@@ -31,7 +31,7 @@ export async function getSpecificTeam (teamId) {
 }
 
 export const getPlayers = async () => {
-    const response = await fetch(`http://localhost:3000/roster.js`);
+    const response = await fetch(`./roster.js`);
     
     return response.json()
 }

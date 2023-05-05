@@ -46,3 +46,26 @@
 .team-link > p:hover {
     color: rgb(131, 131, 243);
 }
+
+@media screen and (max-width:800px) {
+    #west, #east {
+        width: 100%;
+    }
+
+    .teams-wrapper {
+        border: none;
+    }
+
+    .team-link {
+
+        text-decoration: none;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .teams-wrapper > h1 {
+        width: 100%;
+    }
+}

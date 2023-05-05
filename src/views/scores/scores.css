@@ -21,6 +21,10 @@
     padding-bottom: 20px;
 }
 
+#back {
+    margin: 0 0 0 10%;
+}
+
 .best-players {
     width: 85%;
 }
@@ -126,4 +130,14 @@
 .team1 > img, .team2 > img {
     width: 30px;
     height: 30px;
+}
+
+@media screen and (max-width: 800px)  {
+    .best-players {
+        width: 95%;
+    }
+    .scores-wrapper {
+        width: 97%;
+    }
+    
 }

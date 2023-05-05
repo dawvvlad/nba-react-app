@@ -6,7 +6,7 @@ export const TeamLi = (props) => {
         <>
             <div key={id} className="team">
                 <Link className="team-link" to={`${id}`}>
-                    <img className="team-icon" src={`../../teams/${id}.png`} alt="" />
+                    <img className="team-icon" src={`./teams/${id}.png`} alt="" />
                     <p>{displayName}</p>
                 </Link> 
             </div>

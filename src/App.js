@@ -16,12 +16,12 @@ function App() {
       <Router>
         <Routes>
         <Route path="*" element={<PageNotFound />} />
-        <Route path="about" element={<About />} />
-          <Route path="/nba" element={<Layout />}>
-            <Route index path="/nba" element={<Homepage />} />
-            <Route path="nba/teams" element={<Teams />} />
-            <Route path="nba/teams/:id" element={<TeamCard />} />
-            <Route path="nba/teams/:id/scores" element={<Scores />} />
+        <Route path="nba-react-app/about" element={<About />} />
+          <Route path="/nba-react-app" element={<Layout />}>
+            <Route index path="/nba-react-app" element={<Homepage />} />
+            <Route path="teams" element={<Teams />} />
+            <Route path="teams/:id" element={<TeamCard />} />
+            <Route path="teams/:id/scores" element={<Scores />} />
           </Route>
         </Routes>
       </Router>

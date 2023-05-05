@@ -8,6 +8,8 @@
     color: white;
 }
 
+
+
 .match {
     text-align: center;
     font-family: 'Montserrat';
@@ -107,4 +109,51 @@
 
 .a {
     margin: 3% 0;
+}
+
+@media screen and (max-width: 800px) {
+    .card-inner {
+        width: 100%;
+
+    }
+    .player-card {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .player-card > li {
+        margin-left: 20px;
+
+    }
+
+    .player-card > p {
+        max-width: 10%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .home-away {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        
+        width: 96%;
+        text-transform: uppercase;
+    }
+    .btns {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .home > img, .away > img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .scores {
+        font-size: 120%;
+    }
 }

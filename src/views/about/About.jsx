@@ -8,7 +8,7 @@ export const About = () => {
                     <h1 className="about-menu__title">this is my nba-library project</h1>
                     <p className="about-menu__text">you can see my other projects at <a className="github-link" href="https://github.com/dawvvlad">https://github.com/dawvvlad</a></p>
 
-                    <Link className="main-menu__link" to="/">HOME</Link>
+                    <Link className="main-menu__link" to="/nba-react-app">HOME</Link>
                 </div>
             </main>
     )

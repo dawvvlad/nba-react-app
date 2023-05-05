@@ -33,7 +33,7 @@ export const TabInner = (props) => {
 
                 <div className="players">{ players.map(player => {
                     return ( <div className="player-card" key={player.name ? player.name : player.firstName}> 
-                                <img className="player-img" src={player.imgURL} alt="player" />
+                                <img className="player-img" src={player.imgURL ? player.imgURL : `./teams/No.png`} alt="player" />
                                 <li> {player.firstName ? `${player.firstName} ${player.lastName}` : player.name} </li> 
                                 <p>{player.jerseyNumber ? player.jerseyNumber : player.stats[player.stats.length - 1].jerseyNumber}</p>
                                 <p>{player.pos}</p>

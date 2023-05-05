@@ -60,9 +60,9 @@ export const TeamCard = () => {
                         <h1>{currentTeam.displayName}</h1>
                     </div>
 
-                    <div className="venue">
+                    {currentTeam.franchise.venue.address ? <div className="venue">
                         <p>{currentTeam.franchise.venue.fullName}, {currentTeam.franchise.venue.address.city}, {currentTeam.franchise.venue.address.state}</p>
-                    </div>
+                    </div> : ``}
                 </div>
 
                 <div className="tab-menu">
